@@ -11,4 +11,6 @@ WORKDIR /root/
 COPY --from=builder /go/src/myhttpserver .
 RUN chmod +x /root/myhttpserver
 
+EXPOSE 1111
+
 ENTRYPOINT ["/root/myhttpserver"]

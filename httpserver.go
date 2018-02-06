@@ -14,7 +14,7 @@ func home(w http.ResponseWriter, req *http.Request) {
 
 func main() {
 	http.HandleFunc("/", home)
-	fmt.Println("Webserver start")
+	fmt.Println("Webserver start....")
 	fmt.Println("  -> listen on port:1111")
 	err := http.ListenAndServe(":1111", nil)
 	if err != nil {
